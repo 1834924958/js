@@ -1,0 +1,44 @@
+ul.gallery {
+width: 750px; /*--Adjust width according to your scenario--*/
+list-style: none;
+margin: 0; padding: 0;
+}
+ul.gallery li {
+float: left;
+margin: 10px 0 10px 25px;
+padding: 0;
+text-align: center;
+border: 1px solid #ccc;
+-moz-border-radius: 3px; /*--CSS3 Rounded Corners--*/
+-khtml-border-radius: 3px; /*--CSS3 Rounded Corners--*/
+-webkit-border-radius: 3px; /*--CSS3 Rounded Corners--*/
+display: inline; /*--Gimp Fix aka IE6 Fix - Fixes double margin bug--*/
+}
+ul.gallery li a.thumb {
+width: 215px; /*--Width of image--*/
+height: 170px; /*--Height of image--*/
+border-bottom: 1px solid #ccc;
+cursor: pointer;
+}
+ul.gallery li span { /*--Used to crop image--*/
+width: 215px;
+height: 170px;
+overflow: hidden;
+display: block;
+}
+ul.gallery li a.thumb:hover {
+background: #333; /*--Hover effect for browser with js turned off--*/
+}
+ul.gallery li h2 {
+font-weight: normal;
+margin: 0;
+padding: 10px;
+background: #f0f0f0;
+border-top: 1px solid #fff; /*--Subtle bevel effect--*/
+}
+ul.gallery li a {
+text-decoration: none;
+color: #777;
+display: block;
+font-size: 140%;
+}

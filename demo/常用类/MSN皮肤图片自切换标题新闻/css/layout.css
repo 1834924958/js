@@ -1,0 +1,31 @@
+*{margin:0;padding:0;}
+body{background:#FFF;color:#000;text-align:center;font:normal 12px Georgia, Arial, Helvetica, sans-serif;}
+a:link,a:visited{color:#369;text-decoration:underline;}
+a:hover{color:#C80000;text-decoration:none;}
+span,li,dt,dd,p,h1,h2,h3,h4,h5,h6{text-align:left;}
+img{border:0;}
+ul,li{list-style-type:none;}
+p{line-height:150%;}
+
+h1{margin:0 auto;width:100%;background:#353535 url(../img/logo.gif) 0 0 no-repeat;font-size:28px;height:60px;color:#FFF;line-height:60px;text-indent:60px;overflow:hidden;border-bottom:3px solid #999;}
+
+#YSel{margin:30px auto;width:298px;height:228px;overflow:hidden;border:1px solid #DEDEDE;background-color:#F7F7F7;}
+#YSel dl{position:relative;z-index:10;float:left;margin:4px;display:inline;width:290px;height:220px;overflow:hidden;}
+#YSel dt{position:absolute;z-index:13;right:0;width:52px;height:48px;overflow:hidden;}
+#YSel dt img{float:left;width:40px;height:40px;margin:4px 4px 4px 8px;display:inline;}
+#YSel dt.current{background-image:url(../img/focus-sel.gif);}
+#YSel dt#YSTab1{top:44px;}
+#YSel dt#YSTab2{top:88px;}
+#YSel dt#YSTab3{top:132px;}
+#YSel dd{position:absolute;z-index:12;top:0;left:0;width:290px;height:220px;overflow:hidden;}
+#YSel dd img{float:left;width:236px;height:180px;}
+#YSel h3{float:left;width:290px;height:24px;font-size:12px;line-height:24px;overflow:hidden;clear:both;}
+#YSel p{float:left;clear:both;width:290px;height:16px;overflow:hidden;line-height:16px;font-size:12px;}
+
+.even{background-color:#F8F8F8;}
+.odd{background-color:#EAEFF5;}
+.hover{background-color:#B0BEC7;color:#FFF;cursor:pointer;}
+.hidden{display:none;clear:both;}
+
+#footer{margin:0 auto;width:960px;padding:15px 0;overflow:hidden;border-top:1px solid #999;}
+#footer p{margin:0 auto;padding:5px 0;width:960px;line-height:20px;text-align:center;font-size:14px;}

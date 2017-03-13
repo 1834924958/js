@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>基于jQuery的图片展示简洁版 </title>
+
+    <meta http-equiv="imagetoolbar" content="false">
+	<link href="galleria.css" rel="stylesheet" type="text/css" media="screen">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.galleria.js"></script>
+	<script type="text/javascript">
+	
+	$(document).ready(function(){
+		
+		$('.gallery_demo_unstyled').addClass('gallery_demo'); // adds new class name to maintain degradability
+		
+		$('ul.gallery_demo').galleria({
+			history   : true, // activates the history object for bookmarking, back-button etc.
+			clickNext : true, // helper for making the image clickable
+			insert    : '#main_image', // the containing selector for our main image
+			onImage   : function(image,caption,thumb) { // let's add some image effects for demonstration purposes
+				
+				// fade in the image & caption
+				image.css('display','none').fadeIn(1000);
+				caption.css('display','none').fadeIn(1000);
+				
+				// fetch the thumbnail container
+				var _li = thumb.parents('li');
+				
+				// fade out inactive thumbnail
+				_li.siblings().children('img.selected').fadeTo(500,0.3);
+				
+				// fade in active thumbnail
+				thumb.fadeTo('fast',1).addClass('selected');
+				
+				// add a title for the clickable image
+				image.attr('title','Next image >>');
+			},
+			onThumb : function(thumb) { // thumbnail effects goes here
+				
+				// fetch the thumbnail container
+				var _li = thumb.parents('li');
+				
+				// if thumbnail is active, fade all the way.
+				var _fadeTo = _li.is('.active') ? '1' : '0.3';
+				
+				// fade in the thumbnail when finnished loading
+				thumb.css({display:'none',opacity:_fadeTo}).fadeIn(1500);
+				
+				// hover effects
+				thumb.hover(
+					function() { thumb.fadeTo('fast',1); },
+					function() { _li.not('.active').children('img').fadeTo('fast',0.3); } // don't fade out if the parent is active
+				)
+			}
+		});
+	});
+	
+	</script>
+	<style media="screen,projection" type="text/css">
+.galleria{list-style:none;width:200px}
+.galleria li{display:block;width:80px;height:80px;overflow:hidden;float:left;margin:0 10px 10px 0}
+.galleria li a{display:none}
+.galleria li div{position:absolute;display:none;top:0;left:180px}
+.galleria li div img{cursor:pointer}
+.galleria li.active div img,.galleria li.active div{display:block}
+.galleria li img.thumb{cursor:pointer;top:auto;left:auto;display:block;width:auto;height:auto}
+.galleria li .caption{display:block;padding-top:.5em}
+* html .galleria li div span{width:400px} /* MSIE bug */
+
+	/* BEGIN DEMO STYLE */
+	*{margin:0;padding:0}
+	body{padding:20px;background:white;text-align:center;background:black;color:#bba;font:80%/140% georgia,serif;}
+	h1,h2{font:bold 80% 'helvetica neue',sans-serif;letter-spacing:3px;text-transform:uppercase;}
+	a{color:#348;text-decoration:none;outline:none;}
+	a:hover{color:#67a;}
+	.caption{font-style:italic;color:#887;}
+	.demo{position:relative;margin-top:2em;}
+	.gallery_demo{width:550px;margin:0 auto;}
+	.gallery_demo li{width:68px;height:50px;border:3px double #111;margin: 0 2px;background:#000;}
+	.gallery_demo li div{left:240px}
+	.gallery_demo li div .caption{font:italic 0.7em/1.4 georgia,serif;}
+	
+	#main_image{margin:0 auto 60px auto;height:300px;width:540px;background:black;}
+	#main_image img{margin-bottom:10px;}
+	.replaced{ width:540px; height:300px}
+	
+	.nav{padding-top:15px;clear:both;font:80% 'helvetica neue',sans-serif;letter-spacing:3px;text-transform:uppercase;}
+	
+	.info{text-align:left;width:500px;margin:30px auto;border-top:1px dotted #221;padding-top:30px;}
+	.info p{margin-top:1.6em;}
+	
+    </style>
+	
+</head>
+<body>
+<div class="demo">
+<div id="main_image"></div>
+<ul class="gallery_demo_unstyled">
+    <li><img src="img/01.jpg" alt="Flowing Rock" title="Flowing Rock Caption"></li>
+    <li><img src="img/02.jpg" alt="Stones" title="Stones - from Apple images"></li>
+    <li class="active"><img src="img/03.jpg" alt="Grass Blades" title="Apple nature desktop images"></li>
+    <li><img src="img/04.jpg" alt="Ladybug" title="Ut rutrum, lectus eu pulvinar elementum, lacus urna vestibulum ipsum"></li>
+    <li><img src="img/05.jpg" alt="Lightning" title="Black &amp; White"></li>
+    <li><img src="img/06.jpg" alt="Lotus" title="Fusce quam mi, sagittis nec, adipiscing at, sodales quis"></li>
+    <li><img src="img/07.jpg" alt="Mojave" title="Suspendisse volutpat posuere dui. Suspendisse sit amet lorem et risus faucibus pellentesque."></li>
+</ul>
+<p class="nav"><a href="#" onclick="$.galleria.prev(); return false;">&laquo; previous</a> | <a href="#" onclick="$.galleria.next(); return false;">next &raquo;</a></p>
+</div>
+
+</p>
+<!-- 结束 -->
+<br />
+
+
+
+
+</body>
+</html>

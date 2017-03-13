@@ -1,0 +1,19 @@
+BODY {FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif}
+img{ border:none;}
+.w960{width:960px;height:auto;display:block;overflow:hidden;margin:0 auto;}
+#BannerArea{HEIGHT: 278px;position:relative;}
+#pic img{width:960px;HEIGHT: 278px;}
+#pic{WIDTH: 100%; HEIGHT:auto;OVERFLOW: hidden}
+#img_text{WIDTH:100%;HEIGHT: 35px;position:absolute;bottom:0px; left:0px;BACKGROUND: url(../images/swf-b-yj.png) no-repeat;}
+ul#play {
+	FLOAT: left;
+	width:200px;
+	padding:0px;
+	display:inline;
+	margin:5px 0px 0px 6px;
+	list-style-type: none;
+}
+ul#play LI {
+	FONT-WEIGHT:bold;BACKGROUND:url(../images/swf_nav-link.gif);FLOAT: left;MARGIN-LEFT: 5px; display:inline;WIDTH:25px;CURSOR:pointer;LINE-HEIGHT:26px;HEIGHT:26px;TEXT-ALIGN:center;}
+.img_switch_vdoing {DISPLAY: inline; WIDTH: 813px; HEIGHT: 35px}
+#swf-top-yj{HEIGHT:7px; width:100%;display:block;position:absolute;top:0px; left:0px;BACKGROUND: url(../images/swf-top-yj.png) no-repeat;}

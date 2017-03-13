@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>仿淘宝上下翻滚的jquery图片切换特效</title>
+
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/jquery.Slide.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+	$("#taobaoSlide").KinSlideshow({
+			moveStyle:"down",
+			intervalTime:8,
+			mouseEvent:"mouseover",
+			titleFont:{TitleFont_size:14,TitleFont_color:"#ffffff"}
+	});
+})
+</script>
+<style>
+.KinSlideshow_titleBar h2{ position:relative;}
+#btnlistID li{ color:#ffffff!important;}
+</style>
+</head>
+<body>
+    <div id="taobaoSlide" style="visibility:hidden;">
+        <a href="http://www.51xuediannao.com/" target="_blank"><img src="images/1.jpg" alt="懒人建站为您提供-基于jquery特效" width="500" height="200" /></a>
+        <a href="http://www.51xuediannao.com/JS/" target="_blank"><img src="images/2.jpg" alt="懒人建站为您分享基于jquery 特效，分享是一种精神" width="500" height="200" /></a>
+        <a href="http://www.51xuediannao.com/jquery/" target="_blank"><img src="images/1.jpg" alt="懒人建站为您提供-jquery 图片特效，jquery 菜单特效" width="500" height="200" /></a>
+        <a href="http://www.51xuediannao.com/" target="_blank"><img src="images/2.jpg" alt="懒人建站 jquery 特效" width="500" height="200" /></a>
+    </div>
+   
+</body>
+</html>

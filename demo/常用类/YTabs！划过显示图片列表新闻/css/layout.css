@@ -1,0 +1,27 @@
+*{margin:0;padding:0;}
+body{background:#FFF;color:#000;text-align:center;font:normal 12px Georgia, Arial, Helvetica, sans-serif;}
+a:link,a:visited{color:#369;text-decoration:underline;}
+a:hover{color:#C80000;text-decoration:none;}
+span,li,dt,dd,p,h1,h2,h3,h4,h5,h6{text-align:left;}
+img{border:0;}
+ul,li{list-style-type:none;}
+p{line-height:150%;}
+
+h1{margin:0 auto;width:100%;background:#353535 url(../img/logo.gif) 0 0 no-repeat;font-size:28px;height:60px;color:#FFF;line-height:60px;text-indent:60px;overflow:hidden;border-bottom:3px solid #999;}
+
+#YHover{margin:40px auto;width:400px;height:331px;border:solid #B0BEC7;border-width:0 1px 1px;overflow:hidden;}
+#YHover h2{margin:0 auto;width:400px;height:22px;color:#369;line-height:22px;text-indent:10px;font-size:12px;overflow:hidden;background-image:url(../img/tab-bg.gif);}
+#YHover dl{float:left;width:400px;height:390px;overflow:hidden;}
+#YHover dt,#Yhover dd{margin:0 auto;width:400px;overflow:hidden;border-bottom:1px solid #B0BEC7;clear:both;}
+#YHover dt{height:22px;line-height:22px;text-indent:10px;cursor:pointer;background-color:#EAEFF5;}
+#YHover dt.current{font-weight:bold;color:#369;}
+#YHover dd{height:80px;}
+#YHover dd img{width:400px;height:80px;}
+
+.even{background-color:#F8F8F8;}
+.odd{background-color:#EAEFF5;}
+.hover{background-color:#B0BEC7;color:#FFF;cursor:pointer;}
+.hidden{display:none;clear:both;}
+
+#footer{margin:0 auto;width:960px;padding:15px 0;overflow:hidden;border-top:1px solid #999;}
+#footer p{margin:0 auto;padding:5px 0;width:960px;line-height:20px;text-align:center;font-size:14px;}

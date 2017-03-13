@@ -1,0 +1,38 @@
+﻿*{margin:0;padding:0;}
+body{background:#FFF;color:#000;text-align:center;font:normal 12px Georgia, Arial, Helvetica, sans-serif;}
+a:link,a:visited{color:#369;text-decoration:underline;}
+a:hover{color:#C80000;text-decoration:none;}
+span,li,dt,dd,p,h1,h2,h3,h4,h5,h6{text-align:left;}
+img{border:0;}
+ul,li{list-style-type:none;}
+p{line-height:150%;}
+
+h1{margin:0 auto;width:100%;background:#353535 url(../img/logo.gif) 0 0 no-repeat;font-size:28px;height:60px;color:#FFF;line-height:60px;text-indent:60px;overflow:hidden;border-bottom:3px solid #999;}
+
+.corner_rt,.corner_rb,.corner_lb,.corner_lt{position:absolute;z-index:99;width:9px;height:9px;overflow:hidden;background:url(../img/corners.gif) 0 -9px no-repeat;}
+.corner_rt{top:-1px;right:-1px;background-position:-9px -9px;}
+.corner_rb{bottom:-1px;right:-1px;background-position:-9px -18px;}
+.corner_lb{bottom:-1px;left:-1px;background-position:0 -18px;}
+.corner_lt{top:-1px;left:-1px;}
+#YHover-Tabs{position:relative;z-index:1;margin:100px auto;width:598px;border:1px solid #CACACA;}
+#YHover-Tabs .hd{height:31px;background:url(../img/cnt-bg.gif) 0 -100px repeat-x;}
+#YHover-Tabs h4{position:relative;z-index:2;float:left;width:120px;height:30px;text-align:center;font-size:14px;font-weight:normal;line-height:30px;}
+#YHover-Tabs h4.first{margin-left:-1px;}
+#YHover-Tabs h4.last{margin-right:-1px;}
+#YHover-Tabs h4 a:link,#YHover-Tabs h4 a:visited,#YHover-Tabs h4 a:hover{position:absolute;z-index:3;left:0;top:0;width:120px;height:30px;line-height:30px;text-decoration:none;}
+#YHover-Tabs h4 a:hover,#YHover-Tabs h4.current a:link,#YHover-Tabs h4.current a:visited,#YHover-Tabs h4.current a:hover{width:118px;border:solid #CACACA;border-width:0 1px;background-color:#FFF;color:#C80000;}
+#YHover-Tabs h4 span{margin:0;display:none;}
+#YHover-Tabs h4.current span{display:block;}
+#YHover-Tabs h4.current span.corner_rt{right:0;top:-1px;background-position:-9px 0;}
+#YHover-Tabs h4.current span.corner_lt{left:0;top:-1px;background-position:0 0;}
+#YHover-Tabs .bd{height:114px;margin-top:5px;}
+#YHover-Tabs .bd a{color:#555;padding-right:3px;}
+#YHover-Tabs p{line-height:24px;padding:10px;font-size:14px;}
+
+.even{background-color:#F8F8F8;}
+.odd{background-color:#EAEFF5;}
+.hover{background-color:#B0BEC7;color:#FFF;cursor:pointer;}
+.hidden{display:none;clear:both;}
+
+#footer{margin:0 auto;width:960px;padding:15px 0;overflow:hidden;border-top:1px solid #999;}
+#footer p{margin:0 auto;padding:5px 0;width:960px;line-height:20px;text-align:center;font-size:14px;}

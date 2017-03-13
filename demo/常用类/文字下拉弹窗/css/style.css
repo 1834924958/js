@@ -1,0 +1,7 @@
+a{text-decoration:none;}
+/*µ¯³ö²Ëµ¥*/
+#showmenu{}
+#menubox{ width:160px; padding:8px 6px 8px 6px; background-color:#ffffff; border:#106086 solid 1px;filter:alpha(opacity=90);opacity: 0.90;
+position:absolute; top:0px; left:0px; display:none;}
+#menubox a{ width:148px; padding-left:6px; padding-right:6px;display:block; color:#106086;border-bottom:#ACE3F8 dashed 1px;height:28px; line-height:28px;}
+#menubox a:hover{background-color:#084673; color:#ffffff; text-decoration:none;}

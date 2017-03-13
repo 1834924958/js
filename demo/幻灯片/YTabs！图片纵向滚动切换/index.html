@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="utf-8" />
+<meta name="robots" content="all" />
+<meta name="keywords" content="YTabs,滑动门特效" />
+<meta name="description" content="YTabs,滑动门特效" />
+<title>YTabs！图片纵向滚动切换</title>
+<link href="css/layout.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+<h1>YTabs！图片纵向滚动切换</h1>
+<div id="YFocus">
+	 <div id="YImage">
+	  	  <p id="YPhotos">
+	  	   	 <a href="http://www.yaohaixiao.com/" title="听歌的美女"><img src="img/1.jpg" alt="听歌的美女" /></a>
+		     <a href="http://www.yaohaixiao.com/" title="名模写真"><img src="img/2.jpg" alt="名模写真" /></a>
+	  	     <a href="http://www.yaohaixiao.com/" title="极品红色法拉利跑车"><img src="img/3.jpg" alt="极品红色法拉利跑车" /></a>
+		     <a href="http://www.yaohaixiao.com/" title="空中特技表演"><img src="img/4.jpg" alt="空中特技表演" /></a>
+		     <a href="http://www.yaohaixiao.com/" title="混血美女 莉亚迪桑"><img src="img/5.jpg" alt="混血美女 莉亚迪桑" /></a>
+		   </p>
+	 </div>
+     <p id="YSamples">
+    	<a href="#1" class="current" title="听歌的美女"><img src="img/s-1.jpg" alt="听歌的美女" /></a>
+    	<a href="#1" title="名模写真"><img src="img/s-2.jpg" alt="名模写真" /></a>
+    	<a href="#1" title="极品红色法拉利跑车"><img src="img/s-3.jpg" alt="极品红色法拉利跑车" /></a>
+    	<a href="#1" title="空中特技表演"><img src="img/s-4.jpg" alt="空中特技表演" /></a>
+    	<a href="#1" title="混血美女 莉亚迪桑"><img src="img/s-5.jpg" alt="混血美女 莉亚迪桑" /></a>
+     </p>
+</div>
+<div id="footer"><p>Copyright &copy; 2008-2009 <a href="http://www.yaohaixiao.com/">yaohaixiao.com</a>, All right reserved.</p></div>
+<script language="javascript" type="text/javascript" src="js/yao.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+	YAO.YTabs({
+		tabs: YAO.getEl('YSamples').getElementsByTagName('img'),
+		contents: YAO.getEl('YPhotos').getElementsByTagName('img'),
+		auto: true,
+		scroll: true,
+		scrollId: 'YPhotos'
+	});
+//-->
+</script>
+</body>
+</html>

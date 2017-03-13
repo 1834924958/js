@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>图片注释框-孤狼整理</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.betterTooltip.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function(){
+			$('.tTip').betterTooltip({speed: 150, delay: 300});//给.tip类元素添加提示框 显示速度150  延迟显示 300
+		});
+	</script>
+</head>
+<body>	
+    <div id="wrapper">
+        <div id="main">
+        	<div class="tTip" style="width:200px;height:100px;background:#ddd;margin-top:200px;float:left" title="看什么看没见过孤狼啊">新闻1</div>
+            <div class="tTip" style="width:200px;height:100px;background:#ccc;margin-top:200px;float:left" title="看什么看没见过孤狼啊">新闻2</div>
+            <div class="tTip" style="width:200px;height:100px;background:#aaa;margin-top:200px;float:left" title="看什么看没见过孤狼啊">新闻3</div>            
+        </div>
+    </div>
+</body>
+</html>

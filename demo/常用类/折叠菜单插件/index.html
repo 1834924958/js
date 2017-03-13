@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Slashdot's Menu</title>
+	<link rel="stylesheet" type="text/css" href="images/sdmenu.css" />
+	<script type="text/javascript" src="images/sdmenu.js">
+		/***********************************************
+		* Slashdot Menu script- By DimX
+		* Submitted to Dynamic Drive DHTML code library: http://www.dynamicdrive.com
+		* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+		***********************************************/
+	</script>
+	<script type="text/javascript">
+	// <![CDATA[
+	var myMenu;
+	window.onload = function() {
+		myMenu = new SDMenu("my_menu");
+		myMenu.speed = 3;                     // 菜单滑动速度，数字越大，速度越快 (推荐值：1 - 5)
+		myMenu.remember = true;               // 在cookie中保存菜单的状态（展开或者折叠），下次打开时自动载入状态
+		myMenu.oneSmOnly = false;             // 一次只能展开一个菜单，设为false可以同时展开多个菜单
+		myMenu.markCurrent = true;            // 标记当前链接（当前页面的菜单显示不同的背景色）
+		myMenu.init();
+	};
+	// ]]>
+	</script>
+  </head>
+  <body>
+    <div style="float: left" id="my_menu" class="sdmenu">
+      <div>
+        <span>Online Tools</span>
+        <a href="http://tools.dynamicdrive.com/imageoptimizer/">Image Optimizer</a>
+        <a href="http://tools.dynamicdrive.com/favicon/">FavIcon Generator</a>
+        <a href="http://www.dynamicdrive.com/emailriddler/">Email Riddler</a>
+        <a href="http://tools.dynamicdrive.com/password/">htaccess Password</a>
+        <a href="http://tools.dynamicdrive.com/gradient/">Gradient Image</a>
+        <a href="http://tools.dynamicdrive.com/button/">Button Maker</a>
+      </div>
+      <div>
+        <span>Support Us</span>
+        <a href="http://www.dynamicdrive.com/recommendit/">Recommend Us</a>
+        <a href="http://www.dynamicdrive.com/link.htm">Link to Us</a>
+        <a href="http://www.dynamicdrive.com/resources/">Web Resources</a>
+      </div>
+      <div class="collapsed">
+        <span>Partners</span>
+        <a href="index.html">JavaScript Kit</a>
+        <a href="http://www.cssdrive.com">CSS Drive</a>
+        <a href="http://www.codingforums.com">CodingForums</a>
+        <a href="http://www.dynamicdrive.com/style/">CSS Examples</a>
+      </div>
+      <div>
+        <span>Test Current</span>
+        <a href="?foo=bar">Current or not</a>
+        <a href="./">Current or not</a>
+        <a href="../">Current or not</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<gallery cellDimension="800" columns="4" zoomOutPerc="15" zoomInPerc="100" frameWidth="20" frameColor="0xFFFFFF" captionColor="0xFFFFFF" enableRightClickOpen="true" >
+<image>
+   <url>images/img_01.jpg</url>
+    <caption>picture1</caption>
+</image>
+<image>
+   <url>images/img_02.jpg</url>
+   <caption>picture2</caption>
+</image>
+<image>
+   <url>images/img_03.jpg</url>
+   <caption>picture3</caption>
+</image>
+<image>
+   <url>images/img_04.jpg</url>
+   <caption>picture4</caption>  
+</image>
+<image>
+   <url>images/img_05.jpg</url>
+   <caption>picture5</caption>
+</image>
+<image>
+   <url>images/img_06.jpg</url>
+   <caption>picture6 </caption>
+</image>
+<image>
+   <url>images/img_07.jpg</url>
+   <caption>picture7 </caption>
+</image>
+<image>
+   <url>images/img_08.jpg</url>
+   <caption>picture8 </caption>
+</image>
+<image>
+   <url>images/img_09.jpg</url>
+   <caption>picture9</caption>
+</image>
+<image>
+   <url>images/img_10.jpg</url>
+   <caption>picture10 </caption>
+</image>
+<image>
+   <url>images/img_11.jpg</url>
+   <caption>picture11</caption>
+</image>
+<image>
+   <url>images/img_12.jpg</url>
+   <caption>picture12 </caption>
+</image>
+<image>
+   <url>images/img_13.jpg</url>
+   <caption>picture13 </caption>
+</image>
+<image>
+   <url>images/img_14.jpg</url>
+   <caption>picture14</caption>
+</image>
+<image>
+   <url>images/img_15.jpg</url>
+   <caption>picture15</caption>
+</image>
+<image>
+   <url>images/img_16.jpg</url>
+   <caption>picture16 </caption>
+</image>
+</gallery>

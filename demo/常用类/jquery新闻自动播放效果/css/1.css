@@ -1,0 +1,38 @@
+
+*{padding:0;margin:0;}
+div#news {
+width: 640px;
+float: left;
+height: 30px;
+margin-top: 10px;
+overflow: hidden;
+position: relative;
+}
+div#news h2 {
+width:91px;
+background: transparent url(../image/what_news_alixixi.jpg) no-repeat left center;
+display: inline;
+float: left;
+height: 20px;
+padding: 17px 10px 0 0;
+text-indent: -9999px;
+}
+div#news p {
+color: #018FD4;
+font-family: "lucida sans",Sans-serif;
+font-weight: bold;
+line-height: 40px;
+text-align: left;
+}
+div#newsticker a {
+color: #018FD4;
+text-decoration: none;
+}
+div#newsticker {
+overflow: hidden;
+position: relative;
+}
+div#newsticker ul {
+list-style-type: none;
+min-height: 1.6em;
+}

@@ -1,0 +1,18 @@
+<!DOCMENT html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="1.js"></script>
+<link rel="stylesheet" href="1.css"/> 
+</head>
+<body>
+	<div id="flashcontent"> <a href="http://www.macromedia.com/go/getflashplayer/">您的Flash版本过低，点击此处下载。</a> </div>	
+	<script type="text/javascript">
+		var fo = new SWFObject("1.swf", "viewer", "100%", "100%", "8", "#181818");				
+		//Optional Configuration
+		//fo.addVariable("langOpenImage", "Open Image in New Window");
+		//fo.addVariable("langAbout", "About");	
+		//fo.addVariable("xmlURL", "gallery.xml");					
+		fo.write("flashcontent");
+	</script>	
+</body>
+</html>

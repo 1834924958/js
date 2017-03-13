@@ -1,0 +1,33 @@
+﻿*{margin:0;padding:0;}
+body{background:#FFF;color:#000;text-align:center;font:normal 12px Georgia, Arial, Helvetica, sans-serif;}
+a:link,a:visited{color:#369;text-decoration:underline;}
+a:hover{color:#C80000;text-decoration:none;}
+span,li,dt,dd,p,h1,h2,h3,h4,h5,h6{text-align:left;}
+img{border:0;}
+ul,li{list-style-type:none;}
+p{line-height:150%;}
+
+h1{margin:0 auto;width:100%;background:#353535 url(../img/logo.gif) 0 0 no-repeat;font-size:28px;height:60px;color:#FFF;line-height:60px;text-indent:60px;overflow:hidden;border-bottom:3px solid #999;}
+
+#YMenu{margin:30px auto;width:590px;height:450px;overflow:hidden;border:3px solid #B0BEC7;padding:4px;}
+#YMenu-side{position:relative;z-index:2;float:left;width:200px;height:450px;border-right:3px solid #B0BEC7;}
+#YMenu-side h3{float:left;width:196px;clear:both;line-height:28px;font-size:14px;text-indent:10px;color:#369;background-color:#EAEFF5;overflow:hidden;clear:both;}
+.YM-mainmnu{float:left;width:100%;clear:both;}
+.YM-mainmnu li{position:relative;z-index:2;cursor:pointer;float:left;width:180px;clear:both;min-height:28px;line-height:28px;text-indent:10px;color:#999;}
+.YM-mainmnu li.current{border-top:1px solid #B0BEC7;border-left:1px solid #B0BEC7;border-bottom:2px solid #B0BEC7;border-right:1px solid #EAEFF5;background-color:#EAEFF5;}
+.YM-mainmnu li.current a{font-size:14px;font-weight:bold;color:#C80000;}
+.YM-mainmnu li.current span{display:none;}
+.YM-mainmnu li .YM-submnu{position:absolute;z-index:3;left:179px;top:-1px;display:none;width:200px;overflow:hidden;border:solid #B0BEC7;border-width:1px 2px 2px 0;background:#EAEFF5 url(../img/mnu-bg.gif) 0 0 no-repeat;}
+.YM-mainmnu li .YM-submnu li{float:left;clear:none;margin-left:10px;display:inline;text-indent:0;width:90px;overflow:hidden;line-height:24px;color:#000;border:0;}
+.YM-mainmnu li .YM-submnu li a{font-size:12px;font-weight:normal;color:#369;}
+#YMenu-main{position:relative;z-index:1;float:right;width:383px;overflow:hidden;}
+#YMenu-main h2{margin:0 auto;width:100%;height:28px;line-height:28px;background-color:#EAEFF5;font-size:18px;text-align:center;overflow:hidden;}
+#YMenu-main p{margin:10px auto;width:100%;line-height:150%;font-size:14px;overflow:hidden;text-indent:28px;}
+
+.even{background-color:#F8F8F8;}
+.odd{background-color:#EAEFF5;}
+.hover{background-color:#B0BEC7;color:#FFF;cursor:pointer;}
+.hidden{display:none;clear:both;}
+
+#footer{margin:0 auto;width:960px;padding:15px 0;overflow:hidden;border-top:1px solid #999;}
+#footer p{margin:0 auto;padding:5px 0;width:960px;line-height:20px;text-align:center;font-size:14px;}

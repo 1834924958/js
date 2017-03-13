@@ -1,0 +1,31 @@
+
+body{
+				background:#000 url(images/stripe.gif) repeat top left;
+				margin:0;
+				padding:0;
+			}
+			span.reference{
+				font-family:Arial;
+				text-transform:uppercase;
+				position:fixed;
+				right:95px;
+				bottom:10px;
+				font-size:11px;
+				text-shadow:1px 1px 1px #000;
+			}
+			span.reference a{
+				color:#aaa;
+				text-decoration:none;
+				margin-right:20px;
+			}
+			span.reference a:hover{
+				color:#ddd;
+			}
+			.title{
+				position:absolute;
+				right:10px;
+				top:10px;
+				width:91px;
+				height:600px;
+				background:transparent url(images/title.png) no-repeat top left;
+			}

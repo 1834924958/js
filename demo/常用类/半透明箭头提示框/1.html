@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style type="text/css">
+      * { font-family: monaco; color: white; }
+      div.item { width:100px; height:50px; background-color: maroon; text-align:center; padding-top:25px; }
+      div#item_1 { position: absolute; margin-top: 10px; left:500px; float:left }
+      div#item_2 { position: absolute; margin-top: 290px; left:500px; float:left }      
+      div#item_3 { position: absolute; margin-top: 150px; left:300px; float:left }                             
+    </style>
+    <link rel="stylesheet" href="./css/jquery.tooltip.css" type="text/css" />
+    <script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.tooltip.js"></script>
+    <script type="text/javascript">
+      $j = jQuery.noConflict();
+      $j(document).ready(function(){
+        $j("div.item").tooltip();
+      });
+    </script>
+  </head>
+
+  <body>
+
+      <div id="item_1" class="item">
+       上
+        <div class="tooltip_description" style="display:none" title="标题框">
+          看什么看没见过孤狼啊1
+        </div>
+      </div>
+
+      <div id="item_2" class="item">
+        下
+        <div class="tooltip_description" style="display:none" title="标题框">
+          看什么看没见过孤狼啊2
+        </div>
+      </div>
+
+      <div id="item_3" class="item">
+        左
+        <div class="tooltip_description" style="display:none" title="标题框">
+         看什么看没见过孤狼啊3
+        </div>
+      </div>
+
+
+
+  </body>
+</html>

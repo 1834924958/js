@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD>
+<META content="text/html; charset=UTF-8" http-equiv=Content-Type>
+<title>jquery弹出层插件jquery.msgbox5.0-懒人建站</title>
+
+
+<STYLE>
+#test SPAN {
+	PADDING: 4px; BACKGROUND-COLOR: #006699; MARGIN: 2px; FLOAT: left; color:white
+}
+#test,textarea {
+	FONT-SIZE: 12px
+}
+</STYLE>
+<LINK rel=stylesheet type=text/css href="jquery.msgbox.css">
+<SCRIPT type=text/javascript src="http://code.jquery.com/jquery-1.4.2.min.js"></SCRIPT>
+<SCRIPT type=text/javascript src="jquery.dragndrop.min.js"></SCRIPT>
+<SCRIPT type=text/javascript src="jquery.msgbox.min.js"></SCRIPT>
+
+<SCRIPT language=JavaScript type=text/javascript>  
+$(function(){   
+
+	$("#test input").click(function(){
+		var index = $("#test input").index($(this));
+		eval($("#test textarea").eq(index).val());
+	});
+
+});   
+  
+</SCRIPT>
+
+<META></HEAD>
+<BODY>
+<DIV id=test>
+<h3>jquery弹出层插件jquery.msgbox5.0-</h3>
+
+<BR><BR><SPAN>最简单的调用方式：<BR><TEXTAREA id=textarea rows=12 cols=30 name=textarea>$.msgbox("");	
+//the string is directly allocated as this:
+//$.msgbox("Hello, world!")</TEXTAREA> <BR><INPUT id=button value=运行 type=button name=button> 
+提示：可修改部分代码后运行</SPAN><SPAN>文本提示：<BR><TEXTAREA id=textarea rows=12 cols=30 name=textarea>$.msgbox({
+	closeImg: 'close.gif',
+	height:500,
+	width:600,
+	content:'Hello, world!',
+	type :'text'
+});	</TEXTAREA> <BR><INPUT id=button value=运行 type=button name=button> 
+提示：可修改部分代码后运行</SPAN><SPAN>警告框：<BR><TEXTAREA id=textarea rows=12 cols=30 name=textarea>$.msgbox({
+	closeImg: 'close.gif',
+	height:130,
+	width:250,
+	content:'Hello, world!',
+	type :'alert',
+	bgAnimate: false, // 禁止背景动画
+	boxAnimate: false, // 禁止提示框动画
+	enableDrag: false // 禁止拖拽
+});	</TEXTAREA> <BR><INPUT id=button value=运行 type=button name=button> 
+提示：可修改部分代码后运行</SPAN><SPAN>确认框：<BR><TEXTAREA id=textarea rows=12 cols=30 name=textarea>$.msgbox({
+	closeImg: 'close.gif',
+	height:130,
+	width:250,
+	content:'Hello, world?',
+	type :'confirm',
+	onClose:function(v){
+		if(v) alert("You've clicked 'Yes' button!");
+		else alert("You've clicked 'No' button or closed me!");
+	}
+});	</TEXTAREA> <BR><INPUT id=button value=运行 type=button name=button> 
+提示：可修改部分代码后运行</SPAN><SPAN>自动关闭：<BR>
+<TEXTAREA id=textarea rows=12 cols=30 name=textarea>$.msgbox({
+	autoClose:10,
+	closeImg: 'close.gif',
+	height:500,
+	width:600,
+	content:'Hello, world!',
+	type :'text'
+});	</TEXTAREA> <BR><INPUT id=button2 value=运行 type=button name=button2> 
+提示：可修改部分代码后运行</SPAN><SPAN>关闭后事件(可见确认框)：<BR><TEXTAREA id=textarea rows=12 cols=30 name=textarea>$.msgbox({
+	closeImg: 'close.gif',
+	height:500,
+	width:600,
+	content:'Hello, world!',
+	type :'text',
+    onClose: function(){alert('你。。。你居然把我关了!')}
+});	</TEXTAREA> <BR><INPUT id=button2 value=运行 type=button name=button2> 
+提示：可修改部分代码后运行</SPAN> <SPAN>Ajax：<BR><TEXTAREA id=textarea2 rows=12 cols=30 name=textarea2>$.msgbox({
+	closeImg: 'close.gif',
+	height:500,
+	width:600,
+	content:'http://51xuediannao.com',
+	type :'ajax',
+    title: 'PWWANG.COM'
+});	</TEXTAREA> <BR><INPUT id=button3 value=运行 type=button name=button3> 
+提示：可修改部分代码后运行</SPAN> <SPAN>Ajax完成后事件：<BR><TEXTAREA id=textarea3 rows=12 cols=30 name=textarea3>$.msgbox({
+	closeImg: 'close.gif',
+	height:500,
+	width:600,
+	content:'http://51xuediannao.com',
+	type :'ajax',
+    title: 'PWWANG.COM',
+    onAjaxed: function(data){alert(data)}
+});	</TEXTAREA><BR><INPUT id=button4 value=运行 type=button name=button4> 
+提示：可修改部分代码后运行</SPAN> <SPAN>iframe：(从外部关闭msgbox)<BR><TEXTAREA id=textarea4 rows=12 cols=30 name=textarea4>$.msgbox({
+	closeImg: 'close.gif',
+	height:500,
+	width:600,
+	content:'outClose.html',
+	type :'iframe',
+    title: '从外部关闭msgbox'
+});	
+// 外部关闭提示框代码:  最简单的方式 $.closemsgbox(top.window.document)
+// $.closemsgbox({
+// document : top.window.document,
+//  bgAnimate: true,    // 允许背景动画
+//  boxAnimate: true,  // 允许提示框动画
+//  onClose: function()  // 关闭时的事件
+//});
+</TEXTAREA> <BR><INPUT id=button5 value=运行 type=button name=button5> 
+提示：可修改部分代码后运行</SPAN> <SPAN>input：<BR><TEXTAREA id=textarea5 rows=12 cols=30 name=textarea5>$.msgbox({
+	closeImg: 'close.gif',
+	height:500,
+	width:600,
+	content:'请输入: ',
+	type :'input',
+	title: '请输入一个值',
+	onInputed: function(v){alert('你输入的是:'+v)}
+});	</TEXTAREA> <BR><INPUT id=button6 value=运行 type=button name=button6> 
+提示：可修改部分代码后运行</SPAN> </DIV>
+</BODY></HTML>

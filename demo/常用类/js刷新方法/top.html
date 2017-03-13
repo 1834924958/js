@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<HTML> 
+<HEAD> 
+<TITLE> top.html </TITLE> 
+</HEAD> 
+<BODY> 
+  <input type=button value="刷新1" onclick="window.parent.frames[1].location.reload()"><br> onclick="window.parent.frames[1].location.reload()"<br>
+  <input type=button value="刷新2" onclick="window.parent.frames.bottom.location.reload()"><br> onclick="window.parent.frames.bottom.location.reload()"<br>
+  <input type=button value="刷新3" onclick="window.parent.frames['bottom'].location.reload()"><br>onclick="window.parent.frames['bottom'].location.reload()"  <br>
+  <input type=button value="刷新4" onclick="window.parent.bottom.location.reload()"><br>onclick="window.parent.bottom.location.reload()" <br>
+  <input type=button value="刷新5" onclick="window.parent['bottom'].location.reload()"><br>onclick="window.parent['bottom'].location.reload()"<br>
+  
+
+  <br><br>
+  自动刷新<br>
+一:在body标签内写上  onload="alert('我被加载了！')"<br>
+二:在head头内添加meta标签 meta http-equiv="refresh" content="20" 实现20秒自动刷新<br>
+二:在head头内添加meta标签 meta http-equiv="refresh" content="20;url=http://8iooi8.com" 实现20秒自动刷新<br>
+四:script language="JavaScript"<BR> 
+    function myrefresh() <br>
+    { <br>
+           window.location.reload(); <br>
+    } <br>
+    setTimeout('myrefresh()',1000); //指定1秒刷新一次 <br>
+</script> 
+
+
+
+</BODY> 
+</HTML> 

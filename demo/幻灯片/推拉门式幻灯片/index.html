@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="main.css" type="text/css" media="all">
+<link href="1.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="1.js"></script>
+<script type="text/javascript" src="2.js"></script>
+</head>
+<body>
+<div id="container">
+	  <h2 class="imagemenu">image menu</h2>
+		<div id="example">
+			<div id="imageMenu">
+			<ul>
+				<li class="landscapes"><a href="http://www.8iooi8.com/" target="_blank">孤狼1</a></li>
+				<li class="people"><a href="http://www.8iooi8.com/" target="_blank">孤狼2</a></li>
+				<li class="nature"><a href="http://www.8iooi8.com/" target="_blank">孤狼3</a></li>
+				<li class="urban"><a href="http://www.8iooi8.com/" target="_blank">孤狼4</a></li>
+				<li class="abstract"><a href="http://www.8iooi8.com/" target="_blank">孤狼5</a></li>
+			</ul>
+			</div>
+		
+		<script type="text/javascript">
+			window.addEvent('domready', function(){
+				var myMenu = new ImageMenu($$('#imageMenu a'),{openWidth:310, border:2, onOpen:function(e,i){window.open(e);}});
+			});
+		</script>
+
+		</div>
+
+	</div>
+<p align="center"></p>
+<p align="center"></p>
+<p align="center">  </p>
+</body>
+</html>

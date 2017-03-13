@@ -1,0 +1,14 @@
+body {margin0; padding:0; text-transform:capitalize;}
+ul,li {margin:0; padding:0; list-style-type:none;}
+.menu {width:606px; height:48px; background:url(images/nav.gif) 0 0 no-repeat;}
+.inner {padding:0 0 0 9px;}
+.menu li {float:left; font-size:12px;}
+.menu li a {text-decoration:none; color:#000; display:block; padding:0 20px; font:12px/44px "微软雅黑";}
+.menu li a:hover {text-decoration:none; color:orange; font:12px/44px "微软雅黑";}
+.menu li ul {visibility:hidden; position:absolute;}
+.menu li.hover ul {/*ie6不支持li:hover所以在这里写成li.hover以方便js取样式*/visibility:visible; position:absolute; display:block; width:408px; padding:0 0 0 18px; background:url(images/subUlBg.gif) 0 0 no-repeat;}
+.menu ul ul li a {padding:0 1em; line-height:48px;}
+.menu ul ul li a:hover {padding:0 1em; line-height:48px;}
+.menu {margin:50px auto;}
+p {text-align:center; font:12px/200% "微软雅黑"; color:skyblue; }
+p a {color:skyblue;}

@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-color: #262626;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #fff;
+}
+img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.ClearBoth {
+	clear: both;
+}
+a:active, a:focus {
+	outline: none;
+}
+p {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.blue {
+	font-weight: bold;
+	color: #009ee0;
+}
+.grey {
+	font-weight: bold;
+	color: #737373;
+}
+.white {
+	font-weight: bold;
+	color: #FFF;
+}
+#wrap {
+	width: 100%;
+}
+/******** HEADER ********/
+.header-colRight {
+	width: 995px;
+	margin: 0 auto 0;
+	padding: 100px 0;
+}
+.header-colRight ul {
+	color: #FFFFFF;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: normal;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.header-colRight li {
+	display: inline;
+	margin: 0;
+	padding: 0 0 0 25px;
+}
+.header-colRight li.active a {
+	color: #009ee0;
+}
+.header-colRight a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+.header-colRight a:hover {
+	color: #009ee0;
+}
+/******** PANEL ********/
+#panel {
+	width: 100%;
+	background: #262626 url(../images/bck-panel.png) repeat;
+	display: none;
+	position: relative;
+}
+#info_box {
+    margin: 0 auto 0 auto;
+	padding: 15px 0;
+}
+#about_box {
+	width: 600px;
+	margin: 0 auto;
+	padding: 10px 10px 40px 15px;
+    color: #333333;
+	background-color: #FFFFFF;
+	position:relative;
+	overflow: hidden;
+}
+#about_box h1 {
+	background: none;
+	color: #009EE0;
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 21px;
+	margin: 0;
+	padding: 0 0 5px 0;
+	text-transform: none;
+}
+#about_box p {
+	color: #262626;
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 18px;
+	margin: 0;
+	padding: 0 0 5px 0;
+}
+#about_box a {
+	color: #262626;
+	text-decoration: none;
+	font-weight: bold;
+}
+#about_box a:hover {
+	color: #009ee0;
+	text-decoration:none !important;
+	border: none;
+}
+#close a {
+	position: absolute;
+	top: 75px;
+	left: 310px;
+}
+#close a:hover {
+	border: none;
+}
+/******** HTMLLOADER ********/
+.QOverlay {
+	background-color: #000000;
+	z-index: 9999;
+}
+.QLoader {
+	background-color: #262626;
+	height: 1px;
+}
+/******** CONTAINER ********/
+.container {
+	width: 995px;
+	margin: 0 auto;
+	overflow: hidden;
+	clear: both;
+}
+.container p {
+	line-height: 1.5em;
+}
+.container img {
+	border: 1px dashed #DDDDDD;
+	float: left;
+	margin: 5px 20px 20px 0;
+	padding: 10px;
+	display: inline;
+}
+.container strong {
+	font-size: 1.5em;
+	padding-bottom: 10px;
+	display: block;
+}

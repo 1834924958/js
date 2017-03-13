@@ -1,0 +1,24 @@
+body{background:#eee;margin:0;padding:0}
+.example{background:#FFF;width:500px;overflow:hidden;border:1px #000 solid;margin:20px auto;padding:15px;-moz-border-radius: 3px;-webkit-border-radius: 3px}
+.my_slider {float:left}
+
+/*My slider2 styles*/
+.my_slider {
+    width:500px;
+    height:340px;
+    overflow: hidden;
+    position:relative;
+    list-style: none outside none;
+    padding:0;
+    margin:0;
+}
+.my_slider img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity:0;
+    width:500px;
+}
+.my_slider img:first-child {
+    opacity:1;
+}

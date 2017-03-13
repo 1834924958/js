@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="utf-8" />
+<meta name="robots" content="all" />
+<meta name="keywords" content="YTabs,滑动门特效" />
+<meta name="description" content="YTabs,滑动门特效" />
+<title>YTabs！横向自动透明过度切换</title>
+<link href="css/layout.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+<h1>YTabs！横向自动透明过度切换</h1>
+<div id="hs-photos">
+	<dl id="hs-bd">
+	    <dt class="current">听歌的美女</dt><dd><a href="#1" title="听歌的美女"><img src="img/1.jpg" alt="听歌的美女" /></a></dd>
+	    <dt>名模写真</dt><dd><a href="#1" title="名模写真"><img src="img/2.jpg" alt="名模写真" /></a></dd>
+	    <dt>超级红色法拉利</dt><dd><a href="#1" title="超级红色法拉利"><img src="img/3.jpg" alt="超级红色法拉利" /></a></dd>
+	    <dt class="hs-last">美女利亚迪桑</dt><dd class="hs-last"><a href="#1" title="美女 - 利亚迪桑"><img src="img/5.jpg" alt="美女 - 利亚迪桑" /></a></dd>
+	</dl>
+</div>
+<div id="footer"><p>Copyright &copy; 2008-2009 <a href="http://www.yaohaixiao.com/">yaohaixiao.com</a>, All right reserved.</p></div>
+<script language="javascript" type="text/javascript" src="js/yao.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+	YAO.YTabs({
+	    tabs: YAO.getEl('hs-bd').getElementsByTagName('dt'),
+	    contents: YAO.getEl('hs-bd').getElementsByTagName('dd'),
+	    evt:'click',
+		  auto: true,
+	    fadeUp: true
+  });
+//-->
+</script>
+</body>
+</html>

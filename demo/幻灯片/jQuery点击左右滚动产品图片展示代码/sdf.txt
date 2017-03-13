@@ -1,0 +1,90 @@
+====================
+IE6最小高度 
+.min_height{
+  min-height:200px;
+  _height:expression(this.scrollHeight < 200 ? "200px" : "auto");
+}
+--------------------------------
+IE6最大高度
+.max_height{
+  max-height:400px;
+  _height:expression(this.scrollHeight > 400 ? "400px" : "auto");
+}
+--------------------------------
+IE6最小宽度
+max-width: 600px;
+	_width:expression(document.body.clientWidth > 600 ? "600px" : "auto");
+	/*_width:expression(document.body.clientWidth < 300 ? "300px" : "auto"); 这是min-width */
+--------------------------------
+IE6最大最小宽度
+.min_and_max_width{
+  min-width:300px;
+  max-width:600px;
+  _width: expression(
+    document.body.clientWidth < 300 ? "300px" :
+       ( document.body.clientWidth > 600 ? "600px" : "auto")
+  );
+} 
+--------------------------------
+IE6最大最小高度
+.min_and_max_height{
+  min-height:200px;
+  max-height:400px;
+  _height: expression(
+    this.scrollHeight < 200 ? "200px" :
+      ( this.scrollHeight > 400 ? "400px" : "auto")
+  );
+}
+====================
+SEO研究中心6群(30981155)管理员moonseo-微微(1219916947)已将您移出该群。
+
+
+
+
+
+
+
+
+
+
+
+
+地 址：河南郑州经三路66号金成国际广场A座1303 
+电 话：0371-65861515、65861516、65861517 
+销售部：0371-65861793 、65862709 
+技术部：0371-65861515、65861517转222 
+邮 箱：zeda2006@163.com 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+北大工学一贯秉承着严格管理的治学态度，管理无处不在，教学秩序、纪律、卫生、测评、就业安置等等。学员若有迟到早退以及相关生活，学习问题，都有班主任跟踪管理，班主任会与学生及家长定期访谈，及时了解学生的问题。任课老师也会具体了解学生的学习情况，下班后无偿为后进生补习功课，保证每个学生都跟得上，学得会。所有教职人员一起管理并将学生塑造成为全新的准职业人。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

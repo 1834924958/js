@@ -1,0 +1,33 @@
+#AdLayer {position:absolute;width:20px;display:none;height:59px;top:10000px;right:0px;}
+img {border:0;}
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background:#EDEAEA;
+	background-attachment:fixed; /* prevent screen flash in IE6 */
+}
+#topNavWrapper {
+	width: 980px;
+
+	height: 31px;
+	margin: 0px auto;
+	z-index:100;
+	_position: relative ;
+	_top:0px;
+}
+#topNav {
+	width: 980px;
+
+	display: block;
+	z-index: 100;
+	overflow: visible;
+	position: fixed;
+	top: 0px; /* position fixed for IE6 */
+	_top: expression(documentElement.scrollTop + "px");
+	background-image: url(../images/1.png);
+	background-repeat: no-repeat;
+	height: 31px;
+}

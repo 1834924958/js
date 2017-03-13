@@ -1,0 +1,26 @@
+*{margin:0;padding:0;}
+body{background:#FFF;color:#000;text-align:center;font:normal 12px Georgia, Arial, Helvetica, sans-serif;}
+a:link,a:visited{color:#369;text-decoration:underline;}
+a:hover{color:#C80000;text-decoration:none;}
+span,li,dt,dd,p,h1,h2,h3,h4,h5,h6{text-align:left;}
+img{border:0;}
+ul,li{list-style-type:none;}
+p{line-height:150%;}
+
+h1{margin:0 auto;width:100%;background:#353535 url(../img/logo.gif) 0 0 no-repeat;font-size:28px;height:60px;color:#FFF;line-height:60px;text-indent:60px;overflow:hidden;border-bottom:3px solid #999;}
+
+#YSlide{position:relative;z-index:1;margin:70px auto;width:400px;height:260px;padding:4px;border:3px solid #B0BEC7;overflow:hidden;}
+.YSample{margin:0 auto;overflow:hidden;}
+.YSample,.YSample img{width:400px;height:260px;}
+.YSample strong{position:absolute;z-index:5;bottom:4px;left:4px;font-weight:normal;width:400px;height:40px;line-height:40px;text-indent:10px;font-size:14px;color:#FFF;background-color:#000;opacity:.7;-moz-opacity:.7;filter:alpha(opacity=70);}
+#YSIndex{position:absolute;z-index:6;top:224px;left:4px;width:400px;text-align:right;height:40px;line-height:40px;overflow:hidden;}
+#YSIndex a:link,#YSIndex a:visited,#YSIndex a:hover{position:relative;z-index:6;padding:4px 8px;border:1px solid #FFF;color:#FFF;margin-right:5px;font-weight:bold;text-decoration:none;font-size:14px;}
+#YSIndex a:hover,#YSIndex a.current:link,#YSIndex a.current:visited,#YSIndex a.current:hover{background-color:#35AADF;}
+
+.even{background-color:#F8F8F8;}
+.odd{background-color:#EAEFF5;}
+.hover{background-color:#B0BEC7;color:#FFF;cursor:pointer;}
+.hidden{display:none;clear:both;}
+
+#footer{margin:0 auto;width:960px;padding:15px 0;overflow:hidden;border-top:1px solid #999;}
+#footer p{margin:0 auto;padding:5px 0;width:960px;line-height:20px;text-align:center;font-size:14px;}

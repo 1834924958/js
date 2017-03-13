@@ -1,0 +1,30 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD>
+<title>摄影网站照片展示jquery特效(图片组展示)</title>
+<LINK href="style/sexylightbox.css" type=text/css rel=stylesheet>
+<SCRIPT language=javascript src="js/jquery.min.js"></SCRIPT>
+<style>
+ul{ margin:300px;}
+</style>
+</HEAD>
+<BODY>
+<UL>
+  <LI><A href="images/01d.jpg" rel=sexylightbox[group1]>
+  <P><IMG src="images/01x.jpg"></P></A></LI>
+  <LI><A href="images/02d.jpg" rel=sexylightbox[group1]>
+  <P><IMG src="images/02x.jpg"></P></A></LI>
+ </UL>
+<SCRIPT src="js/jquery.easing.1.3.js" type=text/javascript></SCRIPT>
+
+<SCRIPT src="js/sexylightbox.v2.3.jquery.js" type=text/javascript></SCRIPT>
+
+<SCRIPT language=javascript>
+   $(document).ready(function(){
+      SexyLightbox.initialize({color:'white', dir: 'images'});
+    });
+	</SCRIPT>
+
+
+
+</BODY>
+</HTML>

@@ -1,0 +1,23 @@
+BODY {BACKGROUND-COLOR: #333}
+.kwickswrap {PADDING: 280px 0px 0px 40px;}
+.kwicks {PADDING: 0px;Z-INDEX: 2; MARGIN: 0px; WIDTH: 840px;LIST-STYLE-TYPE: none; POSITION: relative; HEIGHT: 50px}
+.kwicks LI {PADDING: 0px; DISPLAY: block;Z-INDEX: 2; FLOAT: left;OVERFLOW: hidden; WIDTH: 120px; CURSOR: pointer;HEIGHT: 50px}
+.kwicks LI A {DISPLAY: block; Z-INDEX: 2; BACKGROUND-IMAGE: url(../images/mainmenu.png); CURSOR: pointer; TEXT-INDENT: -9999px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 50px; outline: none}
+#kwick1 A {BACKGROUND-POSITION: 0px 0px}
+#kwick1 A:hover {BACKGROUND-POSITION: 0px -50px}
+#kwick1 #aktiv {BACKGROUND-POSITION: 0px -50px}
+#kwick2 A {BACKGROUND-POSITION: -190px 0px}
+#kwick2 A:hover {BACKGROUND-POSITION: -190px -50px}
+#kwick2 #aktiv {BACKGROUND-POSITION: -190px -50px}
+#kwick3 A {BACKGROUND-POSITION: -380px 0px}
+#kwick3 A:hover {BACKGROUND-POSITION: -380px -50px}
+#kwick3 #aktiv {BACKGROUND-POSITION: -380px -50px}
+#kwick4 A {BACKGROUND-POSITION: -570px 0px}
+#kwick4 A:hover {BACKGROUND-POSITION: -570px -50px}
+#kwick4 #aktiv {BACKGROUND-POSITION: -570px -50px}
+#kwick5 A {BACKGROUND-POSITION: -760px 0px}
+#kwick5 A:hover {BACKGROUND-POSITION: -760px -50px}
+#kwick5 #aktiv {BACKGROUND-POSITION: -760px -50px}
+#kwick6 A {BACKGROUND-POSITION: -950px 0px}
+#kwick6 A:hover {BACKGROUND-POSITION: -950px -50px}
+#kwick6 #aktiv {BACKGROUND-POSITION: -950px -50px}

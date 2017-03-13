@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<script type="text/javascript" src="mglass.js"></script>
+
+<link rel="stylesheet" type="text/css" href="mglass.css" />
+<body>
+
+
+
+<!------------------------------圆形放大镜------------------------------------------->
+<img id="1" src="1.jpg" width="500" height="375" alt="" border="0"/>
+<br/>
+<script type="text/javascript">
+var config = {
+	wrapperClassName : "mglass_wrapper mglass_wrapper_2",
+	viewerClassName : "mglass_viewer mglass_viewer_2" 
+};
+var mr1 = new MGlass("1","2.jpg", config);
+</script>
+</div>
+<!---------------------------------------------------------------------------------->
+
+
+
+
+
+
+<!---------圆形灰度放大镜----------------------------------------------------------->
+<img id="2" src="1.jpg" width="500" height="375" alt="" border="0"/>
+<style type="text/css">
+
+.mglass_picture_box_3 {
+	opacity: 0.45; //设置蒙板灰度
+	filter: alpha(opacity=45);
+}
+.mglass_viewer_3 {
+	width: 150px; 
+	height: 150px;
+	-moz-border-radius: 75px;
+	-webkit-border-radius: 75px;
+	-khtml-border-radius: 75px;
+	border-radius: 75px;
+}
+</style>
+
+<script type="text/javascript">
+var config = {
+	wrapperClassName : "mglass_wrapper mglass_wrapper_3",
+	pictureBoxClassName : "mglass_picture_box mglass_picture_box_3",
+	viewerClassName : "mglass_viewer mglass_viewer_3"
+};
+new MGlass("2","2.jpg", config);
+</script>
+<!---------------------------------------------------------------------------------->
+
+
+
+
+
+<br/>
+<br/>
+
+
+<!--------方形放大镜---------------------------------------------------------------->
+<img id="3" src="1.jpg" width="750" height="563" alt="" border="0"/>
+<style type="text/css">
+.mglass_viewer_city {
+	width: 300px; 
+	height: 300px;
+	border: 1px solid white; 
+}
+</style>
+<script type="text/javascript">
+var config = {
+	wrapperClassName : "mglass_wrapper mglass_wrapper_city",
+	viewerClassName : "mglass_viewer mglass_viewer_city" 
+};
+new MGlass("3","2.jpg", config);
+</script>
+<!---------------------------------------------------------------------------------->
+
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+<!--------模糊样式----------------------------------------------------------------->
+<img id="4" src="blur_scottwills_hydrant1.jpg" width="500" height="386" alt="" border="0"/>
+<style type="text/css">
+.mglass_inner_html {
+	width: 100px; 
+	height: 25px;
+	margin: 62px auto;
+	line-height: 25px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	background-color: #343434;
+	opacity: 0.75;
+}
+</style>
+<script type="text/javascript">
+var config = {
+	wrapperClassName : "mglass_wrapper mglass_wrapper_6",
+	viewerClassName : "mglass_viewer mglass_viewer_6",
+	innerHTML : '<div class="mglass_inner_html">Unblur</div>'
+};
+new MGlass("4","scottwills_hydrant1.jpg", config);
+</script>
+<!---------------------------------------------------------------------------------->
+
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+</head>
+
+<body>
+<!-- Flash图片轮播 begin -->
+<SCRIPT src="js/1.js" type="text/javascript"></SCRIPT>
+<DIV id=lanren_tuku align="center"></DIV>
+<SCRIPT>
+txt="<a image='images/Img_01.jpg' info='标题01' url='http://www.8iooi8.com' /><a image='images/Img_02.jpg' info='标题02' url='http://www.8iooi8.com' /><a image='images/Img_03.jpg' info='标题 03' url='http://www.8iooi8.com' /><a image='images/Img_04.jpg' info='标题 04' url='http://www.8iooi8.com' /><a image='images/Img_05.jpg' info='标题 05' url='http://www.8iooi8.com' />"
+var sohuFlash2 = new sohuFlash("flash/1.swf", "27", 320, 310, "7");
+sohuFlash2.addParam("quality", "high");
+sohuFlash2.addParam("wmode", "opaque");
+sohuFlash2.addVariable("txt",txt);
+sohuFlash2.write("lanren_tuku");
+</SCRIPT>
+</DIV>
+<!-- Flash图片轮播 end -->
+</body>
+</html>

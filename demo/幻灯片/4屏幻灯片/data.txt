@@ -1,0 +1,24 @@
+&small_1=images/01.jpg
+&big_1=images/a.jpg
+&biaoti1=<a href="http://www.8iooi8.com/" target="_blank"><b>1111111</b></a>
+&wen1=<a href="http://www.8iooi8.com/" target="_blank">111111111111111111111111111111111111<BR></a>
+&fm1url1=http://www.8iooi8.com/
+&picbiaoti1=111
+&small_2=images/02.jpg
+&big_2=images/b.jpg
+&biaoti2=<a href="http://www.8iooi8.com/" target="_blank"><b>2222222</b></a>
+&wen2=<a href="http://www.8iooi8.com/" target="_blank">222222222222222222222222222222222222<BR></a>
+&fm1url2=http://www.8iooi8.com/
+&picbiaoti2=222
+&small_3=images/03.jpg
+&big_3=images/c.jpg
+&biaoti3=<a href="http://www.8iooi8.com/" target="_blank"><b>3333333</b></a>
+&wen3=<a href="http://www.8iooi8.com/" target="_blank">333333333333333333333333333333333333<BR></a>
+&fm1url3=http://www.8iooi8.com/
+&picbiaoti3=333
+&small_4=images/04.jpg
+&big_4=images/d.jpg
+&biaoti4=<a href="http://www.8iooi8.com/" target="_blank"><b>44444444</b></a>
+&wen4=<a href="http://www.8iooi8.com/" target="_blank">444444444444444444444444444444444444<BR></a>
+&fm1url4=http://www.8iooi8.com/
+&picbiaoti4=444

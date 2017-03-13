@@ -1,0 +1,48 @@
+﻿*{margin:0;padding:0;}
+body{background:#FFF;color:#000;text-align:center;font:normal 12px Georgia, Arial, Helvetica, sans-serif;}
+a:link,a:visited{color:#369;text-decoration:underline;}
+a:hover{color:#C80000;text-decoration:none;}
+span,li,dt,dd,p,h1,h2,h3,h4,h5,h6{text-align:left;}
+img{border:0;}
+ul,li{list-style-type:none;}
+p{line-height:150%;}
+
+h1{margin:0 auto;width:100%;background:#353535 url(../img/logo.gif) 0 0 no-repeat;font-size:28px;height:60px;color:#FFF;line-height:60px;text-indent:60px;overflow:hidden;border-bottom:3px solid #999;}
+
+#FG-Weekhot {position:relative;z-index:1;margin:80px auto;width:600px;height:265px;background:url(../img/yellow_line.gif) 0 20px repeat-x;}  
+#FG-Weekhot h3{float:left;width:61px;margin-left:2px;font-size:12px;font-weight:normal;height:21px;overflow:hidden;cursor:pointer;line-height:23px;display:inline;background:#F6F6F6 url(../img/tabs.gif) 0 -21px no-repeat;text-align:center;clear:right;}
+#FG-Weekhot h3 a:link,#FG-Weekhot h3 a:visited,#FG-Weekhot h3 a:hover{color:#000;text-decoration:none;}
+#FG-Weekhot h3.current{background:#E1E1E1 url(../img/tabs.gif) 0 0 no-repeat;}
+#FG-Weekhot h3.first{margin-left:10px;}
+#FG-Weekhot h3.fred,#FG-Weekhot h3.fred a:link,#FG-Weekhot h3.fred a:visited,#FG-Weekhot h3.fred a:hover{color:#C80000;}  
+.hot-bd{position:absolute;z-index:2;left:0;top:20px;width:600px;height:244px;border-bottom:1px solid #FFE49B;background-image:url(../img/fgtabs-bg.gif);}
+.hotel-list{float:left;width:100%;overflow:hidden;}
+.hotel-list li{float:left;width:200px;height:240px;overflow:hidden;}
+.hotel-list h4{margin:10px auto;width:190px;height:40px;line-height:20px;font-size:14px;font-weight:normal;text-align:center;overflow:hidden;}
+.hotel-list p{margin:0 auto;width:190px;height:180px;} 
+.hotel-list p img{float:left;width:150px;height:150px;margin:0 20px;display:inline;}
+.hotel-list span{float:left;width:190px;height:34px;line-height:28px;overflow:hidden;text-align:center;} 
+.hotel-list span img{float:none;width:29px;height:13px;margin:0;vertical-align:middle;} 
+a.hot-more:link,a.hot-more:visited,a.hot-more:hover{position:absolute;z-index:3;right:10px;top:-21px;width:80px;line-height:21px;overflow:hidden;}
+.top10-bd{float:left;width:416px;height:229px;margin:8px 0 7px 7px;display:inline;overflow:hidden;background:url(../img/top10.gif) 0 0 no-repeat;}
+.top10-bd h4{margin:10px auto 0;width:95%;line-height:24px;font-size:14px;font-weight:normal;text-align:center;height:48px;overflow:hidden;}
+.top10-bd p{margin:10px auto 0;width:416px;height:150px;overflow:hidden;text-align:center;margin-top:10px;}
+.top10-bd p img{width:150px;height:150px;}
+.top10-item{float:left;margin-left:6px;display:inline;width:410px;height:229px;overflow:hidden;background:url(../img/top10.gif) 0 -229px repeat-x;clear:both;}
+.top10-item h4{height:32px;line-height:32px;margin-top:0;}
+.top10-item p{height:180px;margin-top:5px;}
+.top10-item p img{width:180px;height:180px;margin:0 10px 0 7px;}
+.top10-list{float:left;width:170px;height:229px;margin-top:8px;overflow:hidden;background:url(../img/top10.gif) 0 -458px no-repeat;}
+.top10-list ul{float:left;width:170px;height:229px;overflow:hidden;}
+.top10-list li{float:left;width:170px;height:22px;line-height:22px;overflow:hidden;}
+.top10-list li.current{background:url(../img/top10_item.gif) 0 -22px no-repeat;}
+.top10-list li.first{background:url(../img/top10_item.gif) 0 0 no-repeat;}
+.top10-list li img{float:left;width:13px;height:13px;margin:4px 4px 4px 10px;display:inline;}
+
+.even{background-color:#F8F8F8;}
+.odd{background-color:#EAEFF5;}
+.hover{background-color:#B0BEC7;color:#FFF;cursor:pointer;}
+.hidden{display:none;clear:both;}
+
+#footer{margin:0 auto;width:960px;padding:15px 0;overflow:hidden;border-top:1px solid #999;}
+#footer p{margin:0 auto;padding:5px 0;width:960px;line-height:20px;text-align:center;font-size:14px;}

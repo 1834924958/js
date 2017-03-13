@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery+css暴雪官方网站的手风琴切换效果</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+<!-- The JavaScript -->
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<script type="text/javascript" src="js/slider.js"></script>  
+
+<body>
+    <div id="col">
+    <dl class="sliderbox" id="slider2">                        
+        <dt class="open"><span class="date">
+        Today
+        </span><span class="title">一号</span></dt>
+        <dd>
+        <div class="thumb"><a href="" onclick="window.open(this.href); return false"><img src="images/cata-launch.jpg" alt="TITLE01"></a></div>
+        <div class="text">11111<div>
+        </div>
+        
+        </div>
+        </dd>                            
+    
+        <dt><span class="date">
+        Dec 9, 2010
+        </span><span class="title">二号</span></dt>
+        <dd>
+        <div class="thumb"><a href=""><img src="images/101208.jpg" alt="TITLE02"></a></div>
+        <div class="text">222222222</div>
+        </dd>                            
+    
+        <dt><span class="date">
+        Dec 6, 2010
+        </span><span class="title">三号</span></dt>
+        <dd>
+        <div class="thumb"><a href=""><img src="images/cat.jpg" alt="TITLE03"></a></div>
+        <div class="text">333333</div>
+        </dd>                            
+    
+        <dt><span class="date">
+        Dec 1, 2010
+        </span><span class="title">四号</span></dt>
+        <dd>
+        <div class="thumb"><a href="" onclick="window.open(this.href); return false"><img src="images/101206.jpg" alt="TITLE04"></a></div>
+        <div class="text">44444444</dd>                            
+	</dl>
+    <script type="text/javascript">
+        var slider2=new accordion.slider("slider2");
+        slider2.init("slider2",0,"open");
+	</script>
+    </div>
+    
+</body>
+</html>

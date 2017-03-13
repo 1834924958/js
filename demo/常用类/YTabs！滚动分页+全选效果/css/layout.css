@@ -1,0 +1,34 @@
+*{margin:0;padding:0;}
+body{background:#FFF;color:#000;text-align:center;font:normal 12px Georgia, Arial, Helvetica, sans-serif;}
+a:link,a:visited{color:#369;text-decoration:underline;}
+a:hover{color:#C80000;text-decoration:none;}
+span,li,dt,dd,p,h1,h2,h3,h4,h5,h6{text-align:left;}
+img{border:0;}
+ul,li{list-style-type:none;}
+p{line-height:150%;}
+
+h1{margin:0 auto;width:100%;background:#353535 url(../img/logo.gif) 0 0 no-repeat;font-size:28px;height:60px;color:#FFF;line-height:60px;text-indent:60px;overflow:hidden;border-bottom:3px solid #999;}
+
+#bk-address{margin:80px auto;width:304px;height:306px;background-color:#FFF;border:1px solid #B0BEC7;overflow:hidden;}
+#bk-adrperfile{margin:0 auto;width:100%;height:24px;overflow:hidden;line-height:24px;border-bottom:1px solid #B0BEC7;background-color:#EAEFF5;}
+#bk-myaddress{position:relative;z-index:3;margin:0 auto;width:100%;height:249px;overflow:hidden;border-bottom:1px solid #B0BEC7;}
+#bk-myaddress ul{position:absolute;top:0;left:0;}
+#bk-adrslist,#bk-adrslist li{float:left;width:100%;overflow:hidden;clear:both;}
+#bk-adrslist li{border-bottom:1px dashed #B0BEC7;height:24px;line-height:24px;}
+#bk-adrslist li.odd{background-color:#F8F8F8;}
+#bk-adrslist li.even{background-color:#FFF;}
+#bk-adrslist li.hover,#bk-adrslist li.chked{background-color:#EAEFF5;cursor:pointer;}
+input.bk-chk{width:13px;height:13px;border:1px solid #999;margin:5px;float:left;display:inline;}
+span.bk-addphone{float:left;line-height:24px;width:86px;overflow:hidden;}
+span.bk-addname{float:right;line-height:24px;color:#399;overflow:hidden;margin-right:7px;display:inline;}
+#bk-adrspages{margin:2px auto 0;height:26px;line-height:26px;width:100%;overflow:hidden;}
+span#bk-pagescount{float:left;overflow:hidden;margin-left:4px;display:inline;}
+span#bk-pagescount em{font-style:normal;font-weight:bold;padding:0 4px;color:#399;}
+span#bk-pagesnav{float:right;overflow:hidden;margin-right:4px;display:inline;}
+span#bk-pagesnav a:link,span#bk-pagesnav a:visited,span#bk-pagesnav a:hover{margin-left:3px;background-color:#F8F8F8;padding:2px 5px;border:1px solid #d9d9d9;text-decoration:none;color:#191919;}
+span#bk-pagesnav a:hover,span#bk-pagesnav a.current:link,span#bk-pagesnav a.current:visited,span#bk-pagesnav a.current:hover{font-weight:bold;color:#369;background-color:#EAEFF5;}
+
+.hidden{display:none;clear:both;}
+
+#footer{margin:0 auto;width:960px;padding:15px 0;overflow:hidden;border-top:1px solid #999;}
+#footer p{margin:0 auto;padding:5px 0;width:960px;line-height:20px;text-align:center;font-size:14px;}

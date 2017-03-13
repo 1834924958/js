@@ -1,0 +1,79 @@
+/*  
+Theme Name: Airos Chou
+Theme URI: http://www.sunflowamedia.com
+Description: Web Design examples
+*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #222;
+	font-family: "Myriad Pro", "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 12px;
+	color: #fff;
+	overflow: hidden;
+}
+h2.title_name {
+	font-family: normal Georgia,'Times New Roman',Times,serif;
+	font-weight: normal;
+	font-size: 4em;
+	margin: 0;
+	padding: 50px 0 20px 0;
+	text-align: center;
+}
+h2.title_name span {
+	font-family: normal Georgia,'Times New Roman',Times,serif;
+	color: #f9f66d;
+	font-size: 0.9em;
+}
+h2.title_name small {
+	color: #AAAAAA;
+	display: block;
+	font-family: normal Verdana,Arial,Helvetica,sans-serif;
+	font-size: 0.2em;
+	letter-spacing: 1.0em;
+	text-transform: uppercase;
+}
+p.copy_right {
+	width: 750px;
+	margin: 30px auto 0 auto;
+	clear: both;
+	font-size: 1.1em;
+	letter-spacing: 1px;
+	text-align: center;
+}
+p.copy_right a {
+	color: #1D68AF;
+}
+p.copy_right a:hover {
+	text-decoration: none;
+}
+/* Content Begin */
+#col {
+	width: 600px;
+	margin: 20px auto 0px auto;
+    border: 10px solid #2D353F;
+	overflow: hidden;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+.pic {
+    width: 200px;
+    height: 200px;
+    margin: 0px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+.pic a img  {
+	height: 500px;
+    border: none;
+    position: absolute;   
+    top: -66.5px;
+    left: -150px;
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+}

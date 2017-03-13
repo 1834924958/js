@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>有利于SEO的jquery焦点图-懒人建站-http://51xuediannao.com</title>
+<meta name="keywords" content="网页特效,网页模板,导航菜单,焦点幻灯片,JS代码" />
+<meta name="description" content="懒人建站为您提供-HTML+CSS模板，JS广告代码，网页特效，导航菜单，焦点幻灯片代码，原创视频教程与网页模板和CSS技巧。" />
+
+<LINK href="style/swf.css" type=text/css rel=stylesheet>
+<!--[if IE 6]>
+<script src="js/DD_belatedPNG.js"></script>
+<script>
+  DD_belatedPNG.fix('#img_text,#swf-top-yj');
+</script>
+<![endif]-->
+<SCRIPT src="js/jquery.min.js" type=text/javascript></SCRIPT>
+<SCRIPT type=text/javascript>
+var _c = _h = 0;
+$(document).ready(function () {
+    $('#play > li').click(function(){
+        var i = $(this).attr('alt') - 1;
+        clearInterval(_h);
+        _c = i;
+        //play();
+        change(i);       
+    })
+    $("#pic img").hover(function(){clearInterval(_h)}, function(){play()});
+    play();
+})
+function play()
+{
+    _h = setInterval("auto()", 5000);
+
+}
+function change(i)
+{
+    $('#play > li').css('background-image','url(images/swf_nav-link.gif)').eq(i).css('background-image','url(images/swf_nav-hover.gif)').blur();
+    $("#pic img").fadeOut('slow').eq(i).fadeIn('slow');
+}
+function auto()
+{   
+    _c = _c > 2 ? 0 : _c + 1;
+
+    change(_c);
+}
+</SCRIPT>
+</HEAD>
+<body>
+<!--swf-->
+<DIV id="BannerArea" class="w960">
+    <DIV id=pic>
+    <A href="#"><IMG alt="" src="images1/Pic1.jpg"></A> 
+    <A href="#"><IMG alt="" src="images1/Pic2.jpg"></A>
+    <A href="#"><IMG alt="" src="images1/Pic3.jpg"></A>
+    <A href="#"><IMG alt="" src="images1/Pic4.jpg"></A>
+    </DIV>
+    <DIV id=img_text>
+     <UL id=play>
+       <LI alt="1">1 </LI>
+       <LI alt="2">2 </LI>
+       <LI alt="3">3 </LI>
+       <LI alt="4">4 </LI>
+     </UL>
+    </DIV>
+   <div id="swf-top-yj"></div>
+</DIV>
+<!--||swf-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--下面只是说明与程序代码无关-->
+<div style="width:95%; height:auto; display:block; margin:0 auto; margin-top:30px; font-size:10pt; line-height:150%;">
+<span>本代码由<a href="http://www.51xuediannao.com" style="color:#F00;">懒人建站网 收集整理 我要学电脑.COM →51xuediannao.com</a> </span><br>
+<a href="http://www.51xuediannao.com">懒人建站 http://www.51xuediannao.com</a><br /><br/>
+<span>我们为您提供-
+<a href="http://www.51xuediannao.com/html+css/">HTML+CSS模板</a>，
+<a href="http://www.51xuediannao.com/js/">JS代码</a>，
+<a href="http://www.51xuediannao.com/JS/texiao/">网页特效</a>，
+<a href="http://www.51xuediannao.com/JS/nav/">导航菜单</a>，
+<a href="http://www.51xuediannao.com/JS/Slide/">焦点幻灯片<a>，
+<a href="http://www.51xuediannao.com/JS/show/">网页欣赏</a>和
+<a href="http://www.51xuediannao.com/JS/jiqiao/css/">CSS技巧</a>；</span><br />
+<span>懒人建站只收录实用和能提高用户体验的代码</span><br />
+<span>我们只想解放出你的部分写代码时间来思考更高层次的设计，而不是要你懒惰、拼凑。</span>
+</div>
+
+<div id="tj" style="display:none;"><script src="http://s9.cnzz.com/stat.php?id=1015985&web_id=1015985" language="JavaScript" charset="gb2312"></script>
+</div>
+</body>
+</html>
